@@ -1,0 +1,153 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    font-family: var(--fonte-text);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+                                    /* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --fonte-title {
+        font-family: 'Montserrat';
+    }
+    --fonte-text{
+        font-family: 'Roboto';
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonte-title) !important;
+}
+
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#container video {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    z-index: 0;
+    position: fixed;
+    opacity: 95%;
+}
+header nav>a {
+    color: #e7eed0; 
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: solid 1px transparent;
+    text-align: center;
+    transition: 0.3s;
+}
+header nav>a:hover {
+    text-align: center;
+    border: 1px solid #e7eed0;
+    backdrop-filter: blur(10px);
+}
+header {
+    order: 2;
+    width: 50%;
+    height: 9%;
+    float: right;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    order: 1;
+}
+main .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    right: 50%;
+    top: 1px;
+    background-color: #e7eed0a2;
+    width: 50%;
+}
+.logo img {
+    opacity: 100% !important;
+}
+
+main .projetos {
+    color: #2e1437;
+    height: 91%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    color: #e7eed0;
+    align-items: center !important;
+}
+.projetos h1{
+    color: #e7eed0;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.socialMedia{
+    position: absolute;
+
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    font-size: 35px;
+    right: 30px;
+    bottom: 50px;
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+}
+.socialMedia a {
+    text-decoration: none;
+    color: #000;
+}
+.socialMedia a:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    color: #f3fcdb;
+}
+#card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    
+}
+
+.projetos div.card {
+    border: solid 1px #000;
+    width: 180px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    ;
+}
+.projetos h1 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.card h1 {
+    font-size: 20px;
+    text-decoration: none
+}

@@ -1,0 +1,153 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    font-family: var(--fonte-text);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+                                    /* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --fonte-title {
+        font-family: 'Montserrat';
+    }
+    --fonte-text{
+        font-family: 'Roboto';
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonte-title) !important;
+}
+
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#container video {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    z-index: 0;
+    position: fixed;
+    opacity: 95%;
+}
+header nav>a {
+    color: #e7eed0; 
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: solid 1px transparent;
+    text-align: center;
+    transition: 0.3s;
+}
+header nav>a:hover {
+    text-align: center;
+    border: 1px solid #e7eed0;
+    backdrop-filter: blur(10px);
+}
+header {
+    order: 2;
+    width: 50%;
+    height: 9%;
+    float: right;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    order: 1;
+}
+main .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    right: 50%;
+    top: 1px;
+    background-color: #e7eed0a2;
+    width: 50%;
+}
+.logo img {
+    opacity: 100% !important;
+}
+
+main .habilidades {
+    color: #2e1437;
+    height: 91%;
+    width: 50%;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    color: #e7eed0;
+    
+}
+.sobreMim span{
+    font-size: 50px;
+}
+.habilidades h1{
+    color: #e7eed0;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    text-decoration: underline;
+}
+
+.habilidades .iconeSkill {
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 220px;
+    
+}
+
+.socialMedia{
+    position: absolute;
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    font-size: 33px;
+    right: 30px;
+    bottom: 50px;
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+}
+.iconeSkill i {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    display: flex;
+}
+
+.iconeSkill p {
+    font-size: 13px;
+    margin-right: 300px;
+    padding-left: 10px;
+    text-align: justify;
+    color: #e7eed0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.socialMedia a {
+    text-decoration: none;
+    color: #000;
+}
+.socialMedia a:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    color: #f3fcdb;
+}
