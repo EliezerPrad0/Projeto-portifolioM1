@@ -133,7 +133,7 @@ main .projetos {
 }
 
 .projetos div.card {
-    border: solid 1px #000;
+    border: solid 3px #2e1437;
     width: 180px;
     height: 200px;
     display: flex;
@@ -141,13 +141,35 @@ main .projetos {
     border-radius: 10px;
     padding: 5px;
     text-align: center;
-    ;
+    justify-content: space-around;
+    backdrop-filter: blur(2px);
 }
-.projetos h1 {
+.projetos .tittle-card {
     margin-bottom: 20px;
     text-decoration: underline;
 }
 .card h1 {
-    font-size: 20px;
-    text-decoration: none
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.card p {
+    color: #e7eed0d2;
+}
+.card a{
+    padding: 5px;
+    margin: 0 40px;
+    border-radius: 10px;
+    border: 1px solid #e7eed0;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgba(46,20,55,1) 0%, rgba(81,66,95,1) 35%, rgba(148,142,153,1) 100%);
+    color: #e7eed0;
+}
+
+.card a:hover{
+    cursor: pointer;
+    background: rgb(46,20,55);
+    background: linear-gradient(270deg, rgba(46,20,55,1) 0%, rgba(81,66,95,1) 35%, rgba(148,142,153,1) 100%);
+    color: #f3fcdb;
+    border: solid #e7eed0 1px;  
 }
